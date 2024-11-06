@@ -61,6 +61,10 @@ h3{
     background-color: #324400;
 }
 
+.header a{
+    color: white;
+}
+
 .logo{
     width: 75px;
 }
@@ -74,7 +78,6 @@ h3{
 }
 
 .navbar a{
-    color: white;
     font-size: 1.5rem;
 }
 
@@ -105,7 +108,6 @@ h3{
 
 /*style du menu*/
 .nav-item a{
-    color: white;
     line-height: 50px;
     font-size: 1.2rem;
     padding: 15px;
@@ -115,4 +117,10 @@ h3{
 .haeder__button:hover, .menu a:hover, a:hover{
     color: #CAF3CA;
     font-weight: bolder;
+}
+
+.footer{
+    background-color: #324400;
+    color: white;
+    text-align: center;
 }
