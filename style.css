@@ -1,0 +1,118 @@
+/* RESET du style par défaut du navigateur 
+que je ne souhaite pas avoir sur mon site */
+
+a {
+    color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+button, input{
+    border-width: 0;
+    appearance: none;
+}
+
+/*Apparence générale*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1{
+    font-size: 36px;
+    text-shadow: -5px 2px 2px white;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+/*apparence des liens boutton*/
+.lien{
+    display: inline-block;
+    background-color: #96B63E;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.lien:hover{
+    background-color: #CAF3CA;
+}
+
+.lien:active{
+    background-color: #88421D;
+}
+
+/*HEADER*/
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #324400;
+}
+
+.logo{
+    width: 75px;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*BURGER-MENU*/
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+/*Cacher "case à cocher" du checkbox + cacher le menu*/
+.navbar input, .menu{
+    display: none;
+}
+
+/*Afficher le menu (qui commence par "btn) en cliquant sur le Burger*/
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+/*Mise en place du menu déplié*/
+.menu{
+    background-color: #324400;
+    position: absolute;
+    top: 85px;
+    left: 30%;
+    right: 0;
+}
+
+/*style du menu*/
+.nav-item a{
+    color: white;
+    line-height: 50px;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+/*mise en évidence de la selection*/
+.haeder__button:hover, .menu a:hover, a:hover{
+    color: #CAF3CA;
+    font-weight: bolder;
+}

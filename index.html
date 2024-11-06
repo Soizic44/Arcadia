@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index référence pour routage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="assets/logo-arcadia.png" sizes="114x114" type="image/png">
 </head>
+
 <body>
-    <header>menu</header>
+    <!--START : header-->
+    <header class="header">
+
+        <!--START : Navbar-->
+        <nav class="navbar">
+            <img class="logo" src="assets/logo-arcadia.png" alt="Logo du zoo arcadia"/>
+            <a href="/">Arcadia</a>
+            
+            <!--Création Burger-->
+            <label for="btn" class="icon">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15"></rect>
+                    <rect y="35" width="100" height="15"></rect>
+                    <rect y="70" width="100" height="15"></rect>
+                </svg>
+            </label>
+            <input type="checkbox" id="btn">
+            
+            <!--Navigation principale / menu-->
+            <ul class="menu">
+                <li class="nav-item"><a href="/">Accueil</a></li>
+                <li class="nav-item"><a href="/">Services</a></li>
+                <li class="nav-item"><a href="/">Habitats</a></li>
+                <li class="nav-item"><a href="/">Contact</a></li>
+                <li class="nav-item"><a href="/">Connexion</a></li>
+            </ul>
+        </nav>
+        <!--END : Navbar-->
+
+    </header>
+    <!--END : header-->
 
     <main id="main-page">
         <!-- Le contenu de la page sera injestée ici-->
@@ -15,6 +48,6 @@
     <footer>footer de mon site</footer>
 
     <script type="module" src="Router/router.js"></script>
-    
+
 </body>
 </html>
