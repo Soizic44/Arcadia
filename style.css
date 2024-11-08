@@ -177,6 +177,38 @@ main{
     align-content: center;
 }
 
+/*Style section*/
+.presentation{
+    background-color: #CAF3CA;
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.titre_h2{
+    background-color: #88421D;
+    height: 40px;
+    align-content: center;
+    color: white;
+}
+
+.histoire, .valeurs{
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.image__presentation{
+    width: 90%;
+    border-radius: 90px;
+}
+
+h3{
+    margin: 10px;
+}
+
 
 
 
