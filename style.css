@@ -23,10 +23,14 @@ body{
     font-family: Arial, Helvetica, sans-serif
 }
 
-h1{
+.h1_principal{
     font-size: 36px;
     color: white;
     text-align: center;
+}
+
+h3{
+    padding: 7px;
 }
 
 .button{
@@ -34,17 +38,16 @@ h1{
 }
 
 /*apparence des liens boutton*/
-.lien{
+.lien, input{
     display: inline-block;
-    background-color: #96B63E;
     border-radius: 10px;
-    color: black;
     text-align: center;
     font-size: 20px;
-    padding: 5px 20px;
+    font-weight: bold;
+    padding: 10px 20px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .lien:hover{
@@ -53,6 +56,21 @@ h1{
 
 .lien:active{
     background-color: #88421D;
+}
+
+/*Couleurs background*/
+.bgColor1{
+    background-color: #CAF3CA;
+}
+
+.bgColor2{
+    background-color: #96B63E;
+    color: black;
+}
+
+.bgColor3{
+    background-color: #324400;
+    color: white;
 }
 
 /*HEADER*/
@@ -71,7 +89,7 @@ h1{
 }
 
 .navbar{
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,16 +139,17 @@ h1{
 }
 
 /*Style footer*/
-.footer{
+footer{
     background-color: #324400;
     color: white;
-    padding: 15px;
+    padding: 5%;
     line-height: 1.3;
+    margin-top: auto;
 }
 
+/*centrage des éléments horaires et copyright*/
 .horaires, .copyright{
     text-align: center;
-    padding: 15px;
 }
 
 .copyright{
@@ -138,14 +157,20 @@ h1{
     border-top: 1px solid;
 }
 
+.copyright p{
+    padding-top: 15px;
+}
+
+/*alignement des sous éléments de horaires*/
 .periode{
-    width: 60%;
+    width: 50%;
 }
 
 .detail-horaires{
     width: 80%;
 }
 
+/*Alignement de l'élément adresse*/ 
 address{
     display: flex;
     align-items: center;
@@ -156,15 +181,12 @@ address{
 .contact1, .contact2{
     height: 80%;
 }
-/*en cas de peu de contenu (page 404): garder footer en bas de page*/
+
+/*en cas de peu de contenu (page 404): garder footer en bas de page (margin-top: auto pour footer)*/
 body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-main{
-    flex: 1;
 }
 
 /*Style bannière accueil*/
@@ -177,9 +199,8 @@ main{
     align-content: center;
 }
 
-/*Style section*/
-.presentation{
-    background-color: #CAF3CA;
+/*Style sections pages*/
+.container{
     text-align: center;
     color: black;
     padding-bottom: 20px;
@@ -192,7 +213,13 @@ main{
     color: white;
 }
 
-.histoire, .valeurs{
+.bgDegrade{
+    background: linear-gradient(to right, #88421D, white);
+    color: black;
+}
+
+/*Styles des sous-sections*/
+.presentation, .habitats, .animaux, .services, .contact{
     background-color: white;
     margin: 50px;
     padding: 20px;
@@ -200,15 +227,58 @@ main{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 
+/*Styles des images des sous-sections*/
 .image__presentation{
     width: 90%;
     border-radius: 90px;
 }
 
-h3{
-    margin: 10px;
+.image__habitats, .image__services{
+    width: 90%;
 }
 
+.image__animaux{
+    width: 90%;
+    border-radius: 50%;
+}
 
+/*Style étoiles pleine de l'avis*/
+.star{
+    font-size: 40px;
+}
+
+/*Style du titre avis dans le bloc contact*/
+.avis{
+    background-color: #324400;
+    color: white;
+    border-radius: 10px;
+    margin: -20px -20px 10px -20px;
+}
+
+/*style formulaire avis*/
+.notation{
+    background: white;
+    margin: 30px 30px 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    border: solid;
+    border-radius: 20px;
+}
+
+#name, #commentaire{
+    border: solid rgb(107, 107, 107) 1px;
+    border-radius: 10px;
+}
+
+.comment{
+    float: inline-start;
+    margin-left: 20px;
+}
+
+.formulaire{
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
 
 
