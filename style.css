@@ -54,6 +54,9 @@ h3{
     cursor: pointer;
     margin-bottom: 30px;
 }
+.lien1{
+    margin-top: 20px;
+}
 
 .lien:hover, input:hover{
     background-color: #CAF3CA;
@@ -144,14 +147,20 @@ h3{
     font-weight: bolder;
 }
 
-/*Style bannière accueil*/
-.hero_accueil{
-    background-image: url(assets/accueil/banniere-accueil-mobile.jpg);
+/*Style bannières*/
+.hero{
     background-color: #324400;
     background-size: cover;
     background-position: left;
     height: 300px;
     align-content: center;
+}
+.hero_accueil{
+    background-image: url(assets/accueil/banniere-accueil-mobile.jpg);
+}
+
+.hero_habitats{
+    background-image: url(assets/habitats/banniere-habitats.jpg);
 }
 
 /*Style sections pages*/
@@ -194,6 +203,10 @@ h3{
 .image_habitats, .image_services{
     width: 90%;
     max-width: 500px;
+}
+.img1{
+    border-radius: 10px;
+    width: 100%;
 }
 
 .image_animaux{
