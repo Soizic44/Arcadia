@@ -234,6 +234,7 @@ h3{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 10px;
     max-width: 100%;
+    margin:inherit;
 }
 
 .formulaire{
@@ -245,6 +246,32 @@ h3{
     padding: 0 5px 0 5px;
     float: inline-start;
     display: block;
+}
+
+/*Style notation étoile*/
+.avis_etoile{
+    display: flex;
+    align-items: center;
+    place-self: center;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.stars label{
+    font-size: 44px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+}
+.avis_etoile input{
+    display: none;
+}
+
+.stars input:checked ~ label, .stars input:hover ~ label{
+    color:#324400
 }
 
 /*Style footer*/
@@ -350,6 +377,7 @@ body{
         margin: auto;
         margin-top: 30px;
     }
+
     .commentaire, .name{
         padding: 0 150px;
     }
