@@ -16,6 +16,7 @@ export const allRoutes = [
     new Route("/brutus", "brutus", "/pages/habitats/marais/brutus.html"),
     new Route("/beshte", "beshte", "/pages/habitats/marais/beshte.html"),
     new Route("/connexion", "connexion", "/pages/connexion.html"),
+    new Route("/creation-compte", "creation-compte", "/pages/creation-compte.html"),
 
 ];
 

@@ -276,23 +276,25 @@ h3{
     border: solid;
     border-radius: 20px;
 }
-
-#name, #commentaire, #titre, #description, #mail, #password{
+/*Style des input des formulaires*/
+#name, #commentaire,.form-input{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 10px;
-    max-width: 100%;
+    display: inline-block;
     margin:inherit;
+    margin: 10px 0;
 }
-
 .formulaire{
     border-bottom: solid 1px;
     padding-bottom: 10px;
 }
-
 .comment{
     padding: 0 5px 0 5px;
     float: inline-start;
     display: block;
+}
+select{
+    font-size: 30px;
 }
 
 /*Style notation étoile*/
@@ -332,7 +334,7 @@ h3{
 /*Styles connexion*/
 .connexion{
     background-color: white;
-    margin: 20px;
+    margin: 60px 10px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
