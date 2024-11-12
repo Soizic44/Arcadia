@@ -277,7 +277,7 @@ h3{
     border-radius: 20px;
 }
 
-#name, #commentaire, #titre, #description, #mail{
+#name, #commentaire, #titre, #description, #mail, #password{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 10px;
     max-width: 100%;
@@ -322,7 +322,7 @@ h3{
 }
 
 /*Style formulaire de contact*/
-    .titre, .description, .email{
+    .titre, .description, .email, .mp{
         padding: 20px;
     }
     .description{

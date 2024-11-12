@@ -15,6 +15,8 @@ export const allRoutes = [
     new Route("/tigrou", "tigrou", "/pages/habitats/jungle/tigrou.html"),
     new Route("/brutus", "brutus", "/pages/habitats/marais/brutus.html"),
     new Route("/beshte", "beshte", "/pages/habitats/marais/beshte.html"),
+    new Route("/connexion", "connexion", "/pages/connexion.html"),
+
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
