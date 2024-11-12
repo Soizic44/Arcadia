@@ -33,6 +33,10 @@ h1{
     color: inherit;
     text-align: inherit;
 }
+.h1_animal{
+    color: inherit;
+    text-align: center;
+}
 
 h3{
     padding: 7px;
@@ -170,6 +174,13 @@ h3{
     background-image: url(assets/contact/banniere-contact.jpg);
     background-position: center;
 }
+.detail_animal{
+    background-image: url(assets/animaux/banniere-animal.jpg);
+    background-color: #324400;
+    background-size: cover;
+    align-content: space-around;
+    min-height: 60vh;
+}
 
 /*Style sections pages*/
 .container{
@@ -184,6 +195,12 @@ h3{
     align-content: center;
     color: white;
 }
+.h2_animal{
+    background-color: #88421d4e;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
 
 .bgDegrade{
     background: linear-gradient(to right, #88421D, white);
@@ -191,7 +208,7 @@ h3{
 }
 
 /*Styles des sous-sections*/
-.presentation, .habitats, .animaux, .services, .contact{
+.presentation, .habitats, .animaux, .services, .contact, .animal{
     background-color: white;
     margin: 50px;
     padding: 20px;
@@ -201,13 +218,19 @@ h3{
     display: inline-block;
 }
 
+.pad1{
+    padding: 30px;
+}
+.cont1{
+    margin: 30px;
+}
+
 /*Styles des images des sous-sections*/
 .image_presentation{
     width: 90%;
     border-radius: 90px;
     max-width: 500px;
 }
-
 .image_habitats, .image_services{
     width: 90%;
     max-width: 500px;
@@ -216,7 +239,6 @@ h3{
     border-radius: 10px;
     width: 100%;
 }
-
 .image_animaux{
     width: 100%;
     border-radius: 50%;
@@ -225,6 +247,10 @@ h3{
 .lemuriens{
     max-width: 300px;
     border-radius: 70%;
+}
+.image_animal{
+    width: 100%;
+    max-width: 500px;
 }
 
 /*Style étoiles pleine de l'avis*/
@@ -422,6 +448,12 @@ body{
         display: flex;
         justify-content: space-around;
         margin: 10px;
+    }
+    .pad1{
+        align-content: center;
+    }
+    .cont1{
+        margin: inherit;
     }
     .section1{
         width: 50%;
