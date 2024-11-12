@@ -322,12 +322,23 @@ h3{
 }
 
 /*Style formulaire de contact*/
-    .titre, .description, .email, .mp{
-        padding: 20px;
-    }
-    .description{
-        display: inline-block;
-    }
+.titre, .description{
+    padding: 20px;
+}
+.description{
+    display: inline-block;
+}
+
+/*Styles connexion*/
+.connexion{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    max-width: 500px;
+    display: inline-block;
+}
 
 /*Style footer*/
 footer.footer{
