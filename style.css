@@ -166,6 +166,10 @@ h3{
     background-image: url(assets/services/banniere-services.jpg);
     background-position: center;
 }
+.hero_contact{
+    background-image: url(assets/contact/banniere-contact.jpg);
+    background-position: center;
+}
 
 /*Style sections pages*/
 .container{
@@ -247,7 +251,7 @@ h3{
     border-radius: 20px;
 }
 
-#name, #commentaire{
+#name, #commentaire, #titre, #description, #mail{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 10px;
     max-width: 100%;
@@ -290,6 +294,14 @@ h3{
 .stars input:checked ~ label, .stars input:hover ~ label{
     color:#324400
 }
+
+/*Style formulaire de contact*/
+    .titre, .description, .email{
+        padding: 20px;
+    }
+    .description{
+        display: inline-block;
+    }
 
 /*Style footer*/
 footer.footer{
@@ -394,7 +406,9 @@ body{
         margin: auto;
         margin-top: 30px;
     }
-
+    .cont2{
+        margin: 30px;
+    }
     .commentaire, .name{
         padding: 0 150px;
     }
