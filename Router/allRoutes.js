@@ -15,8 +15,10 @@ export const allRoutes = [
     new Route("/tigrou", "tigrou", "/pages/habitats/jungle/tigrou.html"),
     new Route("/brutus", "brutus", "/pages/habitats/marais/brutus.html"),
     new Route("/beshte", "beshte", "/pages/habitats/marais/beshte.html"),
-    new Route("/connexion", "connexion", "/pages/connexion.html"),
-    new Route("/creation-compte", "creation-compte", "/pages/creation-compte.html"),
+    new Route("/connexion", "connexion", "/pages/authentif/connexion.html"),
+    new Route("/creation-compte", "creation-compte", "/pages/authentif/creation-compte.html"),
+    new Route("/mon-compte", "Mon compte", "/pages/authentif/mon-compte.html"),
+    new Route("/modifier-mp", "modifier-mp", "/pages/authentif/modifier-mp.html"),
 
 ];
 
