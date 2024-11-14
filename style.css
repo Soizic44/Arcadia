@@ -75,7 +75,7 @@ h3{
     color: black;
 }
 
-.lien:active, button:active, .lien2:hover, .lien2:active, button:active{
+.lien:active, button:active, .lien2:hover, .lien2:active, button:active, input[type="radio"]:checked{
     background-color: #88421D;
 }
 
@@ -283,8 +283,9 @@ h3{
 
 /*FORMULAIRES*/
 /*style contenteur du formulaire avis*/
-.notation{
+.containForm{
     background: white;
+    background-color: rgb(247, 247, 247);
     margin: 30px 30px 30px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -292,26 +293,38 @@ h3{
     border-radius: 20px;
 }
 /*Style des input des formulaires*/
+.label{
+    display: inline-block;
+    width: 350px;
+    margin: 10px 0;
+}
+
 .form-input{
     border: solid rgb(107, 107, 107) 1px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: inline-block;
     margin:inherit;
     margin: 10px 0;
 }
-.form-input1{
+.input1{
     border: solid rgb(107, 107, 107) 1px;
-    margin:inherit;
-    margin: 10px 0;
-    display: inherit;
-    display: flex;
+    border-radius: 5px;
+}
+.textForm{
+    text-align: justify;
 }
 input, select{
     font-size: 1em;
     padding: 0.5%;
 }
-.labelForme{
-    text-align: none;
+
+input[type=radio]{
+    width: 15px;
+    height: 15px;
+    border: solid rgb(63, 63, 63) 1px;
+    border-radius: 50%;
+    margin: 10px;
+    vertical-align: middle;
 }
 
 .formulaire{
@@ -356,17 +369,6 @@ input, select{
 }
 .description{
     display: inline-block;
-}
-
-/*Styles connexion*/
-.connexion{
-    background-color: white;
-    margin: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-    display: inline-block;
-    align-items: center;
 }
 
 /*FOOTER*/
@@ -468,13 +470,17 @@ body{
         background-position: center;
     }
     /*Changement style formulaire contact*/
-    .contact, .notation{
+    .contact, .containForm{
         width: max-content;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .titre{
+        min-width: 600px;
     }
     .cont2{
-        margin: 30px;
+        margin-top: 40px;
     }
     .commentaire, .name{
         padding: 0 150px;

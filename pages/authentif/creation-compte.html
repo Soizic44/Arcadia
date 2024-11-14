@@ -10,50 +10,42 @@
     <h2 class="titre_h2">Création de compte utilisateur</h2>
 
     <!--Formulaire-->
-    <div class="connexion">
+    <div class="containForm">
         <form action="" method="POST">
             <div>
-                <label class="labelForme" for="name">Nom :</label>
-                <input class="form-input1" id="name" type="text" name="name" placeholder="DUPONT" required>
+
+            </div>
+            <div class="titre">
+                <label class="label" for="name">Nom :</label>
+                <input class="input1" id="name" type="text" name="name" placeholder="DUPONT" required>
             </div><br/>
-            <div>
-                <label class="labelForme" for="firstname">Prénom :</label>
-                <input class="form-input1" id="firstname" type="text" name="firstname" placeholder="Victor" required>
+            <div class="titre">
+                <label class="label" for="firstname">Prénom :</label>
+                <input class="input1" id="firstname" type="text" name="firstname" placeholder="Victor" required>
             </div><br/>
 
-            <div id="choiceRole">
-                <label class="labelForme" for="role">Role utilisateur :</label>
-                <div>
-                    <input type="radio" name="role" id="employé" required checked><label for="employé">Employé</label>
-                </div>
-                <div>
-                    <input type="radio" name="role" id="veterinaire" required><label for="veterinaire">Vétérinaire</label>
-                </div>
+            <div class="titre">
+                <label class="label" for="role">Role utilisateur :</label>
+                    <input class="input1" type="radio" name="role" id="employé" required checked><label for="employé">Employé</label>
+                    <input class="input1" type="radio" name="role" id="veterinaire" required><label for="veterinaire">Vétérinaire</label>
             </div>
 
-            <div>
-                <label for="role">Role utilisateur :</label>
-                <select class="form-input1" name="role" id="role" placeholder="Employé" required>
-                    <option value="employe">Employé</option>
-                    <option value="veterinaire">Vétérinaire</option>
-                </select>
+            <div class="titre">
+                <label class="label" for="mail">Identifiant (Email) :</label>
+                <input class="input1" class="form-input" id="mail" type="email" name="mail" placeholder="test@mail.fr" required>
             </div><br/>
-            <div>
-                <label class="labelForme" for="mail">Identifiant (Email) :</label>
-                <input class="form-input1" class="form-input" id="mail" type="email" name="mail" placeholder="test@mail.fr" required>
+            <div class="titre">
+                <label class="label" for="password">Mot de passe :</label>
+                <input class="input1"type="password" class="form-input" id="password" name="password" placeholder="Mot de passe">
             </div><br/>
-            <div>
-                <label class="labelForme" for="password">Mot de passe :</label>
-                <input class="form-input1" type="password" class="form-input" id="password" name="password" placeholder="Mot de passe">
-            </div><br/>
-            <div>
-                <label class="labelForme" for="validation-password">Confirmation mot de passe :</label>
-                <input class="form-input1" type="password" class="form-input" id="validation-password" name="validation-password" placeholder="Mot de passe">
+            <div class="titre">
+                <label class="label" for="validation-password">Confirmation mot de passe :</label>
+                <input class="input1" type="password" class="form-input" id="validation-password" name="validation-password" placeholder="Mot de passe">
             </div><br/>
 
-            <button class="lien bgColor2" type="submit" class="bgColor2">Inscription</button>
+            <button type="submit" class="lien bgColor2">Inscription</button>
         </form>
     </div>
-    
+
 </section>
 <!--END : Création de compte utilisateur-->
