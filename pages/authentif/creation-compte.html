@@ -1,3 +1,4 @@
+
 <!--START : hero-->
 <section class="hero_contact hero">
     <h1 class="h1">Création de compte utilisateur</h1>
@@ -12,34 +13,45 @@
     <div class="connexion">
         <form action="" method="POST">
             <div>
-                <label for="name">Nom :</label>
-                <input class="form-input" id="name" type="text" name="name" placeholder="DUPONT" required>
+                <label class="labelForme" for="name">Nom :</label>
+                <input class="form-input1" id="name" type="text" name="name" placeholder="DUPONT" required>
             </div><br/>
             <div>
-                <label for="firstname">Prénom :</label>
-                <input class="form-input" id="firstname" type="text" name="firstname" placeholder="Victor" required>
+                <label class="labelForme" for="firstname">Prénom :</label>
+                <input class="form-input1" id="firstname" type="text" name="firstname" placeholder="Victor" required>
             </div><br/>
+
+            <div id="choiceRole">
+                <label class="labelForme" for="role">Role utilisateur :</label>
+                <div>
+                    <input type="radio" name="role" id="employé" required checked><label for="employé">Employé</label>
+                </div>
+                <div>
+                    <input type="radio" name="role" id="veterinaire" required><label for="veterinaire">Vétérinaire</label>
+                </div>
+            </div>
+
             <div>
                 <label for="role">Role utilisateur :</label>
-                <select class="form-input" name="role" id="role" placeholder="Employé" required>
+                <select class="form-input1" name="role" id="role" placeholder="Employé" required>
                     <option value="employe">Employé</option>
                     <option value="veterinaire">Vétérinaire</option>
                 </select>
             </div><br/>
             <div>
-                <label for="mail">Identifiant (Email) :</label>
-                <input class="form-input" class="form-input" id="mail" type="email" name="mail" placeholder="test@mail.fr" required>
+                <label class="labelForme" for="mail">Identifiant (Email) :</label>
+                <input class="form-input1" class="form-input" id="mail" type="email" name="mail" placeholder="test@mail.fr" required>
             </div><br/>
             <div>
-                <label for="password">Mot de passe :</label>
-                <input class="form-input" type="password" class="form-input" id="password" name="password" placeholder="Mot de passe">
+                <label class="labelForme" for="password">Mot de passe :</label>
+                <input class="form-input1" type="password" class="form-input" id="password" name="password" placeholder="Mot de passe">
             </div><br/>
             <div>
-                <label for="validation-password">Confirmation mot de passe :</label>
-                <input class="form-input" type="password" class="form-input" id="validation-password" name="validation-password" placeholder="Mot de passe">
+                <label class="labelForme" for="validation-password">Confirmation mot de passe :</label>
+                <input class="form-input1" type="password" class="form-input" id="validation-password" name="validation-password" placeholder="Mot de passe">
             </div><br/>
 
-            <input class="bgColor2" type="submit" value="Inscription">
+            <button class="lien bgColor2" type="submit" class="bgColor2">Inscription</button>
         </form>
     </div>
     

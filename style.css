@@ -10,6 +10,7 @@ a {
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-style: inherit;
 }
 
 button, input{
@@ -42,12 +43,8 @@ h3{
     padding: 7px;
 }
 
-.button{
-    color: #ff9e6a;
-}
-
 /*apparence des liens boutton*/
-.lien, input, button{
+.lien{
     display: inline-block;
     border-radius: 10px;
     text-align: center;
@@ -67,13 +64,18 @@ h3{
     font-weight: bolder;
     text-decoration: underline;
 }
+.lien3{
+    color:#96B63E;
+    font-style: italic;
+    font-weight: bolder;
+}
 
 .lien:hover, input:hover, button:hover{
     background-color: #CAF3CA;
     color: black;
 }
 
-.lien:active, button:active, .lien2:hover, .lien2:active{
+.lien:active, button:active, .lien2:hover, .lien2:active, button:active{
     background-color: #88421D;
 }
 
@@ -94,7 +96,6 @@ h3{
     background-color: red;
     color: white;
 }
-
 
 
 /*HEADER*/
@@ -124,7 +125,7 @@ h3{
     font-size: 1.8rem;
 }
 
-/*BURGER-MENU*/
+/*Burger-Menu*/
 .icon{
     fill: white;
     cursor: pointer;
@@ -149,7 +150,7 @@ h3{
     right: 0;
 }
 
-/*style du menu*/
+/*style du MENU*/
 .nav-item a{
     line-height: 50px;
     font-size: 1.2rem;
@@ -162,7 +163,8 @@ h3{
     font-weight: bolder;
 }
 
-/*Style bannières*/
+/*MAIN*/
+/*Style Bannières (HERO)*/
 .hero{
     background-color: #324400;
     background-size: cover;
@@ -228,7 +230,7 @@ h3{
     max-width: 500px;
     display: inline-block;
 }
-
+/*sous-sections détails animaux/habitat*/
 .pad1{
     padding: 30px;
 }
@@ -264,12 +266,7 @@ h3{
     max-width: 500px;
 }
 
-/*Style étoiles pleine de l'avis*/
-.star-pleine{
-    font-size: 40px;
-    color: #324400;
-}
-
+/*AVIS*/
 /*Style du titre avis dans le bloc contact*/
 .avis{
     background-color: #324400;
@@ -278,7 +275,14 @@ h3{
     margin: -20px -20px 10px -20px;
 }
 
-/*style formulaire avis*/
+/*Style étoiles pleine de l'avis*/
+.star-pleine{
+    font-size: 40px;
+    color: #324400;
+}
+
+/*FORMULAIRES*/
+/*style contenteur du formulaire avis*/
 .notation{
     background: white;
     margin: 30px 30px 30px;
@@ -288,24 +292,36 @@ h3{
     border-radius: 20px;
 }
 /*Style des input des formulaires*/
-#name, #commentaire,.form-input{
+.form-input{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 10px;
     display: inline-block;
     margin:inherit;
     margin: 10px 0;
 }
+.form-input1{
+    border: solid rgb(107, 107, 107) 1px;
+    margin:inherit;
+    margin: 10px 0;
+    display: inherit;
+    display: flex;
+}
+input, select{
+    font-size: 1em;
+    padding: 0.5%;
+}
+.labelForme{
+    text-align: none;
+}
+
 .formulaire{
     border-bottom: solid 1px;
     padding-bottom: 10px;
 }
+
 .comment{
     padding: 0 5px 0 5px;
     float: inline-start;
-    display: block;
-}
-select{
-    font-size: 30px;
 }
 
 /*Style notation étoile*/
@@ -345,14 +361,15 @@ select{
 /*Styles connexion*/
 .connexion{
     background-color: white;
-    margin: 60px 10px;
+    margin: 50px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-    max-width: 500px;
     display: inline-block;
+    align-items: center;
 }
 
+/*FOOTER*/
 /*Style footer*/
 footer.footer{
     background-color: #324400;
