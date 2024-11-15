@@ -16,21 +16,37 @@
     <!--Formulaire-->
     <div class="containForm">
         <form action="" method="POST">
-        <h3 class="formulaire">Formulaire de contact :</h3>
-        <br/>
-        <div class="titre">
-            <label for="titre">Titre :</label>
-            <input class="form-input" id="titre" type="text" name="titre" required>
-        </div><br/>
-        <div class="description">
-            <label class="comment" for="description">Description :</label>
-            <textarea class="form-input" id="description" name="description" cols="40" rows="20"></textarea>
-        </div><br/>
-        <div class="titre">
-            <label for="mail">E-mail :</label>
-            <input class="form-input" id="mail" type="email" name="mail" required>
-        </div><br/>
-        <input class="lien bgColor3" type="submit" value="Envoyer">
+            <h3 class="formulaire">Formulaire de contact :</h3>
+            <br/>
+            <fieldset>
+                <legend class="legend-form">Vos coordonnées</legend>
+                <div class="titre">
+                    <label for="name">Nom :</label>
+                    <input class="form-input"id="name" type="text" name="name" placeholder="DUPONT" required>
+                </div><br/>
+                <div class="titre">
+                    <label for="firstname">Prénom :</label>
+                    <input class="form-input" id="firstname" type="text" name="firstname" placeholder="Victor" required>
+                </div><br/>
+                <div class="titre">
+                    <label for="mail">E-mail :</label>
+                    <input class="form-input" id="mail" type="email" name="mail" required>
+                </div><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend class="legend-form">Votre message</legend>
+                <div class="titre">
+                    <label for="titre">Titre :</label>
+                    <input class="form-input" id="titre" type="text" name="titre" required>
+                </div><br/>
+                <div class="titre">
+                    <label class="comment" for="description">Description :</label>
+                    <textarea class="form-input" id="description" name="description" cols="40" rows="20"></textarea>
+                </div><br/>
+            </fieldset>
+
+            <input class="lien bgColor3" type="submit" value="Envoyer">
         </form>
     </div>
     

@@ -158,10 +158,9 @@
         <form action="" method="POST">
             <div class="formulaire"><h3>Laisser un avis</h3></div>
             <br/>
-            <div>
-                <label for="name">Pseudo :</label>
-                <input class="form-input" id="name" type="text" name="name" required>
-            </div><br/>
+            <label for="name">Nom :</label>
+            <input class="form-input" id="name" type="text" name="name" required>
+            <br/>
             <!--étoile de notation cliquable-->
             <div class="avis_etoile">
                 <label class="form-label" for="avis_note">Note :</label>
@@ -180,9 +179,9 @@
             </div><br/>
 
             <!--Bloc commentaire-->
-            <div class="commentaire">
+            <div class="titre form">
                 <label class="comment" for="commetaire">Commentaire :</label>
-                <textarea class="form-input" id="commentaire" name="commentaire" cols="40" rows="20"></textarea>
+                <textarea class="form-input" id="commentaire" name="commentaire" cols="40" rows="25"></textarea>
             </div><br/>
             <input class="lien bgColor2" type="submit" value="Envoyer">
         </form>

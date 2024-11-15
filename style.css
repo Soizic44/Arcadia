@@ -43,6 +43,23 @@ h3{
     padding: 7px;
 }
 
+/*Style attention*/
+.info{
+    color: red;
+    font-style: italic;
+}
+
+/*Ajout espace supplémentaire*/
+.padding{
+    padding: 20px;
+}
+.pad1{
+    padding: 30px;
+}
+.cont1{
+    margin: 30px;
+}
+
 /*apparence des liens boutton*/
 .lien{
     display: inline-block;
@@ -69,12 +86,10 @@ h3{
     font-style: italic;
     font-weight: bolder;
 }
-
 .lien:hover, input:hover, button:hover{
     background-color: #CAF3CA;
     color: black;
 }
-
 .lien:active, button:active, .lien2:hover, .lien2:active, button:active, input[type="radio"]:checked{
     background-color: #88421D;
 }
@@ -83,7 +98,6 @@ h3{
 .bgColor1{
     background-color: #CAF3CA;
 }
-
 .bgColor2{
     background-color: #96B63E;
     color: black;
@@ -104,15 +118,12 @@ h3{
     top: 0;
     background-color: #324400;
 }
-
 .header a{
     color: white;
 }
-
 .logo{
     width: 75px;
 }
-
 .navbar{
     padding: 20px;
     display: flex;
@@ -120,7 +131,6 @@ h3{
     justify-content: space-between;
     position: relative;
 }
-
 .navbar a{
     font-size: 1.8rem;
 }
@@ -201,7 +211,6 @@ h3{
     color: black;
     padding-bottom: 20px;
 }
-
 .titre_h2{
     background-color: #88421D;
     height: 40px;
@@ -214,7 +223,6 @@ h3{
     padding: 10px;
     margin: 20px;
 }
-
 .bgDegrade{
     background: linear-gradient(to right, #88421D, white);
     color: black;
@@ -230,13 +238,7 @@ h3{
     max-width: 500px;
     display: inline-block;
 }
-/*sous-sections détails animaux/habitat*/
-.pad1{
-    padding: 30px;
-}
-.cont1{
-    margin: 30px;
-}
+
 
 /*Styles des images des sous-sections*/
 .image_presentation{
@@ -286,29 +288,29 @@ h3{
 .containForm{
     background: white;
     background-color: rgb(247, 247, 247);
-    margin: 30px 30px 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border: solid;
     border-radius: 20px;
+    max-width: min-content;
 }
+fieldset, .form{
+    text-align: initial;
+    margin: 0 40px 20px;
+}
+
 /*Style des input des formulaires*/
 .label{
     display: inline-block;
     width: 350px;
     margin: 10px 0;
 }
-
 .form-input{
     border: solid rgb(107, 107, 107) 1px;
     border-radius: 5px;
-    display: inline-block;
     margin:inherit;
     margin: 10px 0;
-}
-.input1{
-    border: solid rgb(107, 107, 107) 1px;
-    border-radius: 5px;
 }
 .textForm{
     text-align: justify;
@@ -317,7 +319,6 @@ input, select{
     font-size: 1em;
     padding: 0.5%;
 }
-
 input[type=radio]{
     width: 15px;
     height: 15px;
@@ -326,12 +327,13 @@ input[type=radio]{
     margin: 10px;
     vertical-align: middle;
 }
-
+.btn-radio{
+    display: inline-block;
+}
 .formulaire{
     border-bottom: solid 1px;
     padding-bottom: 10px;
 }
-
 .comment{
     padding: 0 5px 0 5px;
     float: inline-start;
@@ -343,12 +345,10 @@ input[type=radio]{
     align-items: center;
     place-self: center;
 }
-
 .stars{
     display: flex;
     flex-direction: row-reverse;
 }
-
 .stars label{
     font-size: 44px;
     color: white;
@@ -358,18 +358,18 @@ input[type=radio]{
 .avis_etoile input{
     display: none;
 }
-
 .stars input:checked ~ label, .stars input:hover ~ label{
     color:#324400
 }
 
 /*Style formulaire de contact*/
-.titre, .description{
-    padding: 20px;
+.titre{
+    padding-left: 20px;
 }
-.description{
+textarea{
     display: inline-block;
 }
+
 
 /*FOOTER*/
 /*Style footer*/
@@ -385,12 +385,10 @@ footer.footer{
 .horaires, .copyright{
     text-align: center;
 }
-
 .copyright{
     margin-top: 1;
     border-top: 1px solid;
 }
-
 .copyright p{
     padding-top: 15px;
 }
@@ -407,6 +405,7 @@ article.horaires{
 .logo_footer{
     display: none;
 }
+
 /*Alignement de l'élément adresse*/ 
 address{
     display: flex;
@@ -470,20 +469,22 @@ body{
         background-position: center;
     }
     /*Changement style formulaire contact*/
-    .contact, .containForm{
+    .contact{
         width: max-content;
         margin: auto;
         margin-top: 40px;
-        margin-bottom: 30px;
+    }
+    .containForm{
+        width: min-content;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .titre{
-        min-width: 600px;
+        min-width: 500px;
     }
     .cont2{
         margin-top: 40px;
-    }
-    .commentaire, .name{
-        padding: 0 150px;
     }
 }
 
@@ -506,7 +507,6 @@ body{
         width: 50%;
         justify-self: center;
     }
-
     /*dimentionnement texte et image des section en ligne*/
     .presentation, .services, .habitats, .animaux{
         width: 100%; 
@@ -556,7 +556,6 @@ body{
     .star-pleine p{
         font-size: 60px;
     }
-
     /*alignement elements dans footer*/
     .footer1{
         position: relative;
@@ -567,12 +566,10 @@ body{
         top: 5%;
         left: 40%;
     }
-
     /*Taille logo*/
     .logo, .logo_footer{
         width: 125px;
     }
-
     /*Changement positionnement des blocs des sections présentation et services*/
     .presentation, .services{
         display: flex;
