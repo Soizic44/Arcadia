@@ -21,8 +21,14 @@ export const allRoutes = [
     new Route("/ajout-horaires", "ajout-horaires", "/pages/formulaires/admin/ajout-horaires.html"),
     new Route("/modifier-horaires", "modifier-horaires", "/pages/formulaires/admin/modifier-horaires.html"),
     new Route("/table-users", "table-users", "/pages/formulaires/admin/table-users.html"),
-    new Route("/creation-compte", "creation-compte", "/pages/formulaires/admin/creation-compte.html"),
+    new Route("/creation-user", "creation-user", "/pages/formulaires/admin/creation-user.html"),
     new Route("/modifier-user", "modifier-user", "/pages/formulaires/admin/modifier-user.html"),
+    new Route("/ajout-service", "ajout-service", "/pages/formulaires/admin/ajout-service.html"),
+    new Route("/modifier-service", "modifier-service", "/pages/formulaires/admin/modifier-service.html"),
+    new Route("/ajout-habitat", "ajout-habitat", "/pages/formulaires/admin/ajout-habitat.html"),
+    new Route("/modifier-habitat", "modifier-habitat", "/pages/formulaires/admin/modifier-habitat.html"),
+    new Route("/ajout-animal", "ajout-animal", "/pages/formulaires/admin/ajout-animal.html"),
+    new Route("/modifier-animal", "modifier-animal", "/pages/formulaires/admin/modifier-animal.html"),
 
 ];
 

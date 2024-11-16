@@ -7,7 +7,6 @@
 <!--START : Savane-->
 <section class="container bgColor1">
     <h2 class="titre_h2">La savane</h2>
-    
     <div class="section cont1">
         <img class="image_habitats img1" src="assets/habitats/savane.jpg" alt="Habitat-savane"/>
         <div class="pad1">
@@ -20,20 +19,32 @@
     </div>
 
     <h2 class="titre_h2">Nos animaux</h2>
-        
+    <a href="/ajout-animal" class="lien bgColor2 lien1">Ajouter</a>
     <div class="section">
         <div class="animaux">
-            <img class="image_animaux" src="assets/animaux/dumbo.jpg" alt="Dumbo"/>
+            <div class="btn-image">
+                <img class="image_animaux" src="assets/animaux/dumbo.jpg" alt="Dumbo"/>
+                <div class="action-image-btn">
+                    <a href="/modifier-animal" class="btn-crud"><img class="image-crud" src="assets/icones/modifier.jpg"></a>
+                    <a href="/supprimer-animal" class="btn-crud"><img class="image-crud" src="assets/icones/supprimer.jpg"></a>
+                </div>
+            </div>
             <h3>Dumbo</h3>
             <a class="lien bgColor2 lien1" href="/dumbo">Détail Dumbo</a>
         </div>
     
         <div class="animaux">
-            <img class="image_animaux" src="assets/animaux/nala.jpg" alt="Nala"/>
+            <div class="btn-image">
+                <img class="image_animaux" src="assets/animaux/nala.jpg" alt="Nala"/>
+                <div class="action-image-btn">
+                    <a href="/modifier-animal" class="btn-crud"><img class="image-crud" src="assets/icones/modifier.jpg"></a>
+                    <a href="/supprimer-animal" class="btn-crud"><img class="image-crud" src="assets/icones/supprimer.jpg"></a>
+                </div>
+            </div>
             <h3>Nala</h3>
             <a class="lien bgColor2 lien1" href="/nala">Détail Nala</a>
         </div>
-    
     </div>
+    <a class="lien bgColor2" href="/habitats">Retour habitats</a>
 </section>
 <!--END : Savane-->

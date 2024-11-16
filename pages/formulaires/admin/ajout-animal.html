@@ -1,0 +1,48 @@
+<!--START : hero-->
+<section class="hero_habitats hero">
+    <h1 class="h1">Ajouter un animal</h1>
+</section>
+<!--END : hero-->
+
+<!--START : Ajouter animal-->
+<section class="container bgColor1">
+    <h2 class="titre_h2">Ajouter un animal</h2>
+
+    <!--Formulaire-->
+    <div class="containForm padding">
+        <form action="" method="GET">
+            <div class="titre">
+                <label for="prenom-animal">Prénom de l'animal :</label>
+                <input class="form-input" type="text" id="prenom-animal" name="prenom-animal" placeholder="Prénom de l'animal">
+            </div><br/>
+            <div class="titre">
+                <label for="photo-animal">Photo de l'animal :</label>
+                <input class="form-input" type="file" id="photo-animal" name="image">
+            </div><br/>
+            <div class="titre">
+                <label for="race-animal">Race de l'animal :</label>
+                <input class="form-input" type="text" id="race-animal" name="race-animal" placeholder="Race de l'animal">
+            </div><br/>
+            <div class="titre">
+                <label for="habitat-animal">Habitat de l'animal :</label>
+                <input class="form-input" type="text" id="habitat-animal" name="habitat-animal" placeholder="Habitat de l'animal">
+            </div><br/>
+            <div class="titre">
+                <label for="sexe-animal">Sexe de l'animal :</label>
+                <div class="btn-radio">
+                    <input class="form-input" type="radio" name="sexe-animal" id="mâle" required checked>
+                    <label for="mâle">Mâle</label>
+                </div>
+                <div class="btn-radio">
+                    <input class="form-input" type="radio" name="sexe-animal" id="femelle" required>
+                    <label for="femelle">Femelle</label>
+                </div>
+            </div><br/>
+            <input class="lien bgColor2" type="submit" value="Ajouter habitat">
+            <div>
+                <a href="/habitats" class="lien2">Cliquer ici pour : Annuler et retourner "page Habitats"</a>
+            </div>
+        </form>
+    </div>
+</section>
+<!--END : Ajouter animal-->

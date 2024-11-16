@@ -37,6 +37,7 @@ h1{
 .h1_animal{
     color: inherit;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -300,6 +301,9 @@ h3{
 }
 .image-crud{
     width: 50px;
+}
+.image-crud1{
+    width: 25px;
 }
 
 /*AVIS*/
@@ -656,5 +660,9 @@ tr:nth-child(2n) td{
     .image_presentation, .image_services{
         width: 250px;
         padding-right: 10px;
+    }
+    /*agrandissement bloc fiche détail animal*/
+    .animal{
+        width: 500px;
     }
 }
