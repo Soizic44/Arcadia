@@ -1,0 +1,59 @@
+<!--START : hero-->
+<section class="hero_contact hero">
+    <h1 class="h1">Modification de compte utilisateur</h1>
+</section>
+<!--END : hero-->
+
+<!--START : Modification compte utilisateur-->
+<section class="container bgColor1">
+    <h2 class="titre_h2">Modification de compte utilisateur</h2>
+
+    <!--Formulaire-->
+    <div class="containForm">
+        <form action="" method="POST">
+            <fieldset class="padding">
+                <legend class="padding">Informations utilisateur</legend>
+                <div class="titre">
+                    <label for="name">Nom :</label>
+                    <input class="form-input" id="name" type="text" name="name" placeholder="DUPONT" required>
+                </div><br/>
+                <div class="titre">
+                    <label for="firstname">Prénom :</label>
+                    <input class="form-input" id="firstname" type="text" name="firstname" placeholder="Victor" required>
+                </div><br/>
+                <div class="titre">
+                    <label for="role">Role utilisateur :</label>
+                    <div class="btn-radio">
+                        <input class="form-input" type="radio" name="role" id="employé" required checked>
+                        <label for="employé">Employé</label>
+                    </div>
+                    <div class="btn-radio">
+                        <input class="form-input" type="radio" name="role" id="veterinaire" required>
+                        <label for="veterinaire">Vétérinaire</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="padding">
+                <legend class="padding">Informations connexion</legend>
+                <div class="titre">
+                    <label for="mail">Identifiant (Email) :</label>
+                    <input class="form-input" class="form-input" id="mail" type="email" name="mail" placeholder="test@mail.fr" required>
+                </div><br/>
+                <div class="titre">
+                    <label for="password">Mot de passe :</label>
+                    <input class="form-input"type="password" class="form-input" id="password" name="password" placeholder="Mot de passe">
+                </div><br/>
+                <div class="titre">
+                    <label for="validation-password">Confirmation du mot de passe :</label>
+                    <input class="form-input" type="password" class="form-input" id="validation-password" name="validation-password" placeholder="Mot de passe">
+                </div>
+            </fieldset>
+            <br/>
+
+            <button type="submit" class="lien bgColor2">Valider</button>
+        </form>
+    </div>
+
+</section>
+<!--END : Modification compte utilisateur-->

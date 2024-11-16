@@ -17,9 +17,12 @@ export const allRoutes = [
     new Route("/beshte", "beshte", "/pages/habitats/marais/beshte.html"),
     new Route("/connexion", "connexion", "/pages/authentif/connexion.html"),
     new Route("/modifier-mp", "modifier-mp", "/pages/authentif/modifier-mp.html"),
-    new Route("/creation-compte", "creation-compte", "/pages/formulaires/creation-compte.html"),
     new Route("/mon-compte", "Mon compte", "/pages/formulaires/mon-compte.html"),
-    
+    new Route("/ajout-horaires", "ajout-horaires", "/pages/formulaires/admin/ajout-horaires.html"),
+    new Route("/modifier-horaires", "modifier-horaires", "/pages/formulaires/admin/modifier-horaires.html"),
+    new Route("/table-users", "table-users", "/pages/formulaires/admin/table-users.html"),
+    new Route("/creation-compte", "creation-compte", "/pages/formulaires/admin/creation-compte.html"),
+    new Route("/modifier-user", "modifier-user", "/pages/formulaires/admin/modifier-user.html"),
 
 ];
 
