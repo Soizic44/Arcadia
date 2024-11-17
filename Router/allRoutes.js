@@ -32,6 +32,8 @@ export const allRoutes = [
     new Route("/comment-habitat", "comment-habitat", "/pages/formulaires/veterinaire/comment-habitat.html"),
     new Route("/cpte-rendus", "cpte-rendus", "/pages/formulaires/veterinaire/cpte-rendus.html"),
     new Route("/creation-cpte-rendus", "creation-cpte-rendus", "/pages/formulaires/veterinaire/creation-cpte-rendus.html"),
+    new Route("/table-conso-animal", "table-conso-animal", "/pages/formulaires/employe/table-conso-animal.html"),
+    new Route("/repas-animal", "repas-animal", "/pages/formulaires/employe/repas-animal.html"),
 
 ];
 
