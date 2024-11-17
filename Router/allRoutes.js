@@ -34,6 +34,7 @@ export const allRoutes = [
     new Route("/creation-cpte-rendus", "creation-cpte-rendus", "/pages/formulaires/veterinaire/creation-cpte-rendus.html"),
     new Route("/table-conso-animal", "table-conso-animal", "/pages/formulaires/employe/table-conso-animal.html"),
     new Route("/repas-animal", "repas-animal", "/pages/formulaires/employe/repas-animal.html"),
+    new Route("/tableau-recap-avis", "tableau-recap-avis", "/pages/formulaires/employe/tableau-recap-avis.html"),
 
 ];
 
