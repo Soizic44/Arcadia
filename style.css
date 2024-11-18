@@ -37,6 +37,7 @@ h1{
 .h1_animal{
     color: inherit;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -86,12 +87,43 @@ h3{
     font-style: italic;
     font-weight: bolder;
 }
+.lien-btn-crud{
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
 .lien:hover, input:hover, button:hover{
     background-color: #CAF3CA;
     color: black;
 }
 .lien:active, button:active, .lien2:hover, .lien2:active, button:active, input[type="radio"]:checked{
     background-color: #88421D;
+}
+/*bouton transparence sur image pour CRUD*/
+.btn-image{
+    position: relative;
+    &:hover{
+        .action-image-btn{
+            opacity: 1;
+        }
+    }
+}
+.action-image-btn{
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 /*Couleurs background*/
@@ -267,6 +299,12 @@ h3{
     width: 100%;
     max-width: 500px;
 }
+.image-crud{
+    width: 50px;
+}
+.image-crud1{
+    width: 25px;
+}
 
 /*AVIS*/
 /*Style du titre avis dans le bloc contact*/
@@ -428,6 +466,45 @@ body{
     flex-direction: column;
 }
 
+/*CRUD*/
+/*Horaires CRUD*/
+.btn-crud{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-bottom: 5px;
+}
+.btn-horaires{
+    margin-bottom: inherit;
+}
+
+/*tableau*/
+table{
+    border-collapse: collapse;
+    color: #404040;
+    display: inline-block;
+}
+th{
+    font-size: 16px;
+    border-bottom: 3px solid #96B63E;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+td{
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+}
+tr:nth-child(2n){
+    background-color: #eff5ef;
+}
+tr:nth-child(2n) td{
+    border-bottom: 1px solid #e0e0e0;
+    border-top:  1px solid #e0e0e0;
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -583,5 +660,9 @@ body{
     .image_presentation, .image_services{
         width: 250px;
         padding-right: 10px;
+    }
+    /*agrandissement bloc fiche détail animal*/
+    .animal{
+        width: 500px;
     }
 }

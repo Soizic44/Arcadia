@@ -1,0 +1,53 @@
+<!--START : hero-->
+<section class="hero_habitats hero">
+    <h1 class="h1">Commenter les habitats</h1>
+</section>
+<!--END : hero-->
+
+<!--START : Ajouter habitat-->
+<section class="container bgColor1">
+    <h2 class="titre_h2">Commenter les habitats</h2>
+
+    <!--Formulaire-->
+    <div class="containForm padding">
+        <form action="" method="POST">
+            <div class="titre">
+                <label for="nom-habitat">Nom de l'habitat :</label>
+                <select name="nom-habitat" id="nom-habitat">
+                    <option value="savane">Savane</option>
+                    <option value="jungle">Jungle</option>
+                    <option value="marais">Marais</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div><br/>    
+            <div class="titre">
+                <label for="autre-habitat">si autre : Nom de l'habitat :</label>
+                <input class="form-input" type="text" id="autre-habitat" name="autre-habitat" placeholder="Intitulé de l'habitat (si autre)">
+            </div><br/>
+            <div class="titre">
+                <label for="avis">Avis sur l'habitat :</label>
+                <input class="form-input" type="text" id="avis" name="avis" placeholder="avis sur l'habitat">
+            </div><br/>
+            <div class="titre">
+                <label class="comment" for="etat-habitat">Etat de l'habitat :</label>
+                <textarea class="form-input" id="etat-habitat" name="etat-habitat" cols="30" rows="15" placeholder="Etat de l'habitat"></textarea>
+            </div><br/>
+            <div class="titre">
+                <label for="ameliorer">Besoin d'amelioration :</label>
+                <div class="btn-radio">
+                    <input class="form-input" type="radio" name="ameliorer" id="oui" required checked>
+                    <label for="oui">Oui</label>
+                </div>
+                <div class="btn-radio">
+                    <input class="form-input" type="radio" name="ameliorer" id="non" required>
+                    <label for="non">Non</label>
+                </div>
+            </div><br/>
+            <input class="lien bgColor2" type="submit" value="Envoyer">
+            <div>
+                <a href="/habitats" class="lien2">Cliquer ici pour : Annuler et retourner "page Habitats"</a>
+            </div>
+        </form>
+    </div>
+</section>
+<!--END : Ajouter habitat-->

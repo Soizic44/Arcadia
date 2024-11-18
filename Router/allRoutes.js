@@ -17,9 +17,24 @@ export const allRoutes = [
     new Route("/beshte", "beshte", "/pages/habitats/marais/beshte.html"),
     new Route("/connexion", "connexion", "/pages/authentif/connexion.html"),
     new Route("/modifier-mp", "modifier-mp", "/pages/authentif/modifier-mp.html"),
-    new Route("/creation-compte", "creation-compte", "/pages/formulaires/creation-compte.html"),
     new Route("/mon-compte", "Mon compte", "/pages/formulaires/mon-compte.html"),
-    
+    new Route("/ajout-horaires", "ajout-horaires", "/pages/formulaires/admin/horaires/ajout-horaires.html"),
+    new Route("/modifier-horaires", "modifier-horaires", "/pages/formulaires/admin/horaires/modifier-horaires.html"),
+    new Route("/table-users", "table-users", "/pages/formulaires/admin/users/table-users.html"),
+    new Route("/creation-user", "creation-user", "/pages/formulaires/admin/users/creation-user.html"),
+    new Route("/modifier-user", "modifier-user", "/pages/formulaires/admin/users/modifier-user.html"),
+    new Route("/ajout-service", "ajout-service", "/pages/formulaires/admin/service/ajout-service.html"),
+    new Route("/modifier-service", "modifier-service", "/pages/formulaires/admin/service/modifier-service.html"),
+    new Route("/ajout-habitat", "ajout-habitat", "/pages/formulaires/admin/habitat/ajout-habitat.html"),
+    new Route("/modifier-habitat", "modifier-habitat", "/pages/formulaires/admin/habitat/modifier-habitat.html"),
+    new Route("/ajout-animal", "ajout-animal", "/pages/formulaires/admin/animal/ajout-animal.html"),
+    new Route("/modifier-animal", "modifier-animal", "/pages/formulaires/admin/animal/modifier-animal.html"),
+    new Route("/comment-habitat", "comment-habitat", "/pages/formulaires/veterinaire/comment-habitat.html"),
+    new Route("/cpte-rendus", "cpte-rendus", "/pages/formulaires/veterinaire/cpte-rendus.html", "/js/veterinaire/cpte-rendus.js"),
+    new Route("/creation-cpte-rendus", "creation-cpte-rendus", "/pages/formulaires/veterinaire/creation-cpte-rendus.html"),
+    new Route("/conso-animal", "conso-animal", "/pages/formulaires/employe/conso-animal.html", "/js/employe/conso-animal.js"),
+    new Route("/repas-animal", "repas-animal", "/pages/formulaires/employe/repas-animal.html"),
+    new Route("/tableau-recap-avis", "tableau-recap-avis", "/pages/formulaires/employe/tableau-recap-avis.html"),
 
 ];
 
