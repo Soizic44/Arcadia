@@ -7,29 +7,43 @@
 <!--START : Tableau recap compte rendus vétérinaire-->
 <section class="container bgColor1">
     <h2 class="titre_h2">Récapitulatif compte rendus vétérinaire</h2>
-
+    
     <!--Tableau-->
     <div class="containForm padding">
         <a href="/creation-cpte-rendus" class="lien bgColor2">Ajouter</a>
+        <br/>
+        <input class="zoneSaisie" type="text" placeholder="Recherche sur prénoms" id="maRecherche" onkeyup="filtrer()">
+        <input class="zoneDate" type="text" placeholder="Recherche sur date..." id="maRechercheDate" onkeyup="filtrer1()">
 
-        <table>
-            <tr>
-                <th>Prénom</th>
-                <th>Date de passage</th>
-                <th>Etat de l'animal</th>
-                <th>Nourriture proposée</th>
-                <th>Grammage recommandé</th>
-                <th>Détail état</th>
-            </tr>
-
-            <tr>
-                <td>Nala</td>
-                <td>10/11/2024</td>
-                <td>Bonne santé</td>
-                <td>Viande</td>
-                <td>5000 g</a></td>
-                <td>Nala est gestante</td>
-            </tr>
+        <table id="tableau">           
+            <thead>
+                <tr>
+                    <th>Prénom</th>           
+                    <th>Date</th>    
+                    <th>Etat de l'animal</th>
+                    <th>Nourriture proposée</th>
+                    <th>Grammage recommandé</th>
+                    <th>Détail état</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nala</td>
+                    <td>10/11/2024</td>
+                    <td>Bonne santé</td>
+                    <td>Viande</td>
+                    <td>5000 g</a></td>
+                    <td>Nala est gestante</td>
+                </tr>
+                <tr>
+                    <td>Tigrou</td>
+                    <td>01/12/2024</td>
+                    <td>Bonne santé</td>
+                    <td>Viande</td>
+                    <td>8000 g</a></td>
+                    <td>Tigrou aime se placer en hauteur</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </section>

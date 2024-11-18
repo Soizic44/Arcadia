@@ -30,9 +30,9 @@ export const allRoutes = [
     new Route("/ajout-animal", "ajout-animal", "/pages/formulaires/admin/animal/ajout-animal.html"),
     new Route("/modifier-animal", "modifier-animal", "/pages/formulaires/admin/animal/modifier-animal.html"),
     new Route("/comment-habitat", "comment-habitat", "/pages/formulaires/veterinaire/comment-habitat.html"),
-    new Route("/cpte-rendus", "cpte-rendus", "/pages/formulaires/veterinaire/cpte-rendus.html"),
+    new Route("/cpte-rendus", "cpte-rendus", "/pages/formulaires/veterinaire/cpte-rendus.html", "/js/veterinaire/cpte-rendus.js"),
     new Route("/creation-cpte-rendus", "creation-cpte-rendus", "/pages/formulaires/veterinaire/creation-cpte-rendus.html"),
-    new Route("/table-conso-animal", "table-conso-animal", "/pages/formulaires/employe/table-conso-animal.html"),
+    new Route("/conso-animal", "conso-animal", "/pages/formulaires/employe/conso-animal.html", "/js/employe/conso-animal.js"),
     new Route("/repas-animal", "repas-animal", "/pages/formulaires/employe/repas-animal.html"),
     new Route("/tableau-recap-avis", "tableau-recap-avis", "/pages/formulaires/employe/tableau-recap-avis.html"),
 
